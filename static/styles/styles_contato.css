@@ -1,111 +1,3 @@
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Main CSS */
-main {
-  padding-top: 120px;
-  padding-bottom: 60px;
-}
-body {
-  font-family: "Cormorant Garamond", serif;
-  background-color: #3a3a3a;
-}
-
-.banner_box {
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-  background-color: blue;
-  align-items: center;
-}
-
-.banner {
-  width: 100%;
-  display: block;
-}
-.nome__logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-.nome_site {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-}
-
-.logo {
-  width: 50px;
-}
-
-.section_title {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-  font-size: 35px;
-  color: #ffffff;
-}
-.section_text {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-  font-size: 25px;
-  color: #ffffff;
-}
-
-/* Header CSS */
-header {
-  background-image: url("../img/background.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 15px;
-  box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
-  background-size: cover;
-}
-header h1 {
-  margin: 0;
-}
-
-/* Navigation CSS */
-nav {
-  background-color: #121212;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-  width: 100%;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-nav li {
-  list-style: none;
-  margin: 0 10px;
-}
-nav a {
-  color: #ffffff;
-  font-family: "Cormorant Garamond", serif;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ff6600;
-}
-
-/* Seção de contato */
 .contato_box {
   display: flex;
   flex-direction: row;
@@ -118,23 +10,17 @@ nav a:hover {
   margin-right: 35px;
 }
 
+#contato a {
+  color: #ffffff;
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .contato_box_info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* Footer CSS */
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-image: url("../img/background.jpg");
-
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
+  text-decoration: none;
 }
