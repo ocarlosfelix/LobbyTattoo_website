@@ -1,35 +1,55 @@
 #contato {
-  margin-left: 35px;
-  margin-right: 35px;
+  margin: 35px 0;
 }
 
-.section_title_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.contato_title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  color: #ffffff;
 }
 
-.contato_box {
+.contato_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.info_section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  margin: 5vh 0;
 }
 
-#contato a {
-  color: #ffffff;
-  font-family: "Cormorant Garamond", serif;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contato_box_info {
+.info_box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 30px;
+
+  cursor: crosshair;
+}
+
+.info_box a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 3vh;
+  align-items: center;
+  text-align: center;
+}
+
+.info_icon {
+  width: 2vw;
+  margin: 3vh 0;
+  flex: 1;
 }
