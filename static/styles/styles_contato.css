@@ -1,13 +1,22 @@
+#contato {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.section_title_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .contato_box {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
-
-#contato {
-  margin-left: 35px;
-  margin-right: 35px;
 }
 
 #contato a {

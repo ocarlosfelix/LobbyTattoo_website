@@ -1,119 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <html>
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta
-        name="description"
-        content="Website do estúdio de tatuagem Lobby Tattoo"
-      />
-      <title>Lobby Tattoo - CONTATO</title>
-      <link rel="icon" type="image/x-icon" href="../static/img/logo.png" />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_reset.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_main.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_header.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_menu.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_footer.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/styles_contato.css"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500&display=swap"
-        rel="stylesheet"
-      />
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website do estúdio de tatuagem Lobby Tattoo"
+    />
+    <title>Lobby Tattoo - CONTATO</title>
+    <link rel="icon" type="image/x-icon" href="../static/img/logo.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/global/styles_reset.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/global/styles_main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/global/styles_header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/global/styles_menu.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/global/styles_footer.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/styles_contato.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-      <header>
-        <div class="nome__logo">
-          <h1 class="nome_site">LOBBY TATTOO</h1>
-          <img class="logo" src="../static/img/logo.png" />
+  <body>
+    <header>
+      <div class="nome__logo">
+        <h1 class="nome_site">LOBBY TATTOO</h1>
+        <img class="logo" src="../static/img/logo.png" />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">| HOME |</a></li>
+          <li><a href="{{ url_for('sobre') }}">| SOBRE |</a></li>
+          <li><a href="{{ url_for('portfolio') }}">| PORTFOLIO |</a></li>
+          <li><a href="{{ url_for('contato') }}">| CONTATO |</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contato">
+        <div class="section_title_box">
+          <h2 class="section_title">CONTATO</h2>
+          <p class="section_text">
+            Entre em contato conosco para marcar sua tatuagem:
+          </p>
         </div>
-
-        <nav>
-          <ul>
-            <li><a href="{{ url_for('index') }}">| HOME |</a></li>
-            <li><a href="{{ url_for('sobre') }}">| SOBRE |</a></li>
-            <li><a href="{{ url_for('portfolio') }}">| PORTFOLIO |</a></li>
-            <li><a href="{{ url_for('contato') }}">| CONTATO |</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <section id="contato">
-          <div class="contato_box">
-            <div class="contato_box_info">
-              <h2 class="section_title">CONTATO</h2>
-              <p class="section_text">
-                Entre em contato conosco para marcar sua tatuagem:
-              </p>
-              <ul>
-                <li>
-                  <a target="_blank" href="tel:04130188452"
-                    >Telefone: (41) 3018-8452</a
-                  >
-                </li>
-                <li>
-                  <a target="_blank" href="mailto:lobbytattoo@gmail.com"
-                    >Email: lobbytattoo@gmail.com</a
-                  >
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://goo.gl/maps/xURbqJiGEuYzwzYJ6"
-                  >
-                    Endereço: Av. Paraná, 1670 - sala 05 - Bacacheri, Curitiba -
-                    PR, 82510-000
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="contato_box_right">
-              <dev class="mapa">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28833.63076841892!2d-49.248007558370986!3d-25.397986300095738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f2f8803429%3A0x137ef04bd0946b1e!2sLOBBY%20TATTOO!5e0!3m2!1spt-BR!2sbr!4v1673826564670!5m2!1spt-BR!2sbr"
-                  width="400"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </dev>
+        <div class="contato_box">
+          <div class="contato_box_info">
+            <ul>
+              <li>
+                <a target="_blank" href="tel:04130188452"
+                  >Telefone: (41) 3018-8452</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="mailto:lobbytattoo@gmail.com"
+                  >Email: lobbytattoo@gmail.com</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://goo.gl/maps/xURbqJiGEuYzwzYJ6">
+                  Endereço: Av. Paraná, 1670 - sala 05 - Bacacheri, Curitiba -
+                  PR, 82510-000
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contato_box_right">
+            <div class="mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.1763788700155!2d-49.24740708529898!3d-25.398905937884685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6f2f8803429%3A0x137ef04bd0946b1e!2sLOBBY%20TATTOO!5e0!3m2!1spt-BR!2sbr!4v1673833509519!5m2!1spt-BR!2sbr"
+                width="500"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
-        </section>
-      </main>
-      <footer>
-        <p>Copyright ©2023 OBardo.dev</p>
-      </footer>
-    </body>
-  </html>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright ©2023 OBardo.dev</p>
+    </footer>
+  </body>
 </html>
