@@ -9,6 +9,10 @@ body {
   background-color: #3a3a3a;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .nome__logo {
   display: flex;
   flex-direction: row;

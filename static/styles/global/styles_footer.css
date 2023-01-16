@@ -4,9 +4,36 @@ footer {
   bottom: 0;
   width: 100%;
   background-image: url("../../img/background.jpg");
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   color: #ffffff;
-  text-align: center;
+  text-align: end;
   padding: 10px;
   box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
+}
+
+.bardo_link {
+  text-decoration: none;
+  color: white;
+}
+
+.bardo_link :hover {
+  color: orange;
+}
+
+.bardo_logo {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.bardo_logo_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright_container {
+  display: flex;
+  flex-direction: row;
 }

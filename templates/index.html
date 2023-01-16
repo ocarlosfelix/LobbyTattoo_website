@@ -1,80 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <html>
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta
-        name="description"
-        content="Website do estúdio de tatuagem Lobby Tattoo"
-      />
-      <title>Lobby Tattoo</title>
-      <link rel="icon" type="image/x-icon" href="../static/img/logo.png" />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_reset.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_main.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_header.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_menu.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/global/styles_footer.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="../static/styles/styles_index.css"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500&display=swap"
-        rel="stylesheet"
-      />
-    </head>
+{% extends 'base.html' %} {% block content %}
 
-    <body>
-      <header>
-        <div class="nome__logo">
-          <h1 class="nome_site">LOBBY TATTOO</h1>
-          <img class="logo" src="../static/img/logo.png" />
-        </div>
+<main>
+  <section id="banner_box">
+    <div class="banner_box">
+      <img class="banner" src="../static/img/banner01.jpg" />
+    </div>
+  </section>
+</main>
 
-        <nav>
-          <ul>
-            <li><a href="{{ url_for('index') }}">| HOME |</a></li>
-            <li><a href="{{ url_for('sobre') }}">| SOBRE |</a></li>
-            <li><a href="{{ url_for('portfolio') }}">| PORTFOLIO |</a></li>
-            <li><a href="{{ url_for('contato') }}">| CONTATO |</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <section id="banner_box">
-          <div class="banner_box">
-            <img class="banner" src="../static/img/banner01.jpg" />
-          </div>
-        </section>
-      </main>
-      <footer>
-        <p>Copyright ©2023 OBardo.dev</p>
-      </footer>
-    </body>
-  </html>
-</html>
+{% endblock %}
