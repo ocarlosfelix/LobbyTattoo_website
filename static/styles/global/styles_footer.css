@@ -1,0 +1,12 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("../../img/background.jpg");
+
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
+}
