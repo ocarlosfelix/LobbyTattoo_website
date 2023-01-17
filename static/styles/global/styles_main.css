@@ -1,5 +1,5 @@
 main {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 60px;
   margin-left: 35px;
   margin-right: 35px;
@@ -42,4 +42,8 @@ body::-webkit-scrollbar {
   font-weight: 100;
   font-size: 25px;
   color: #ffffff;
+}
+
+.mapa_box {
+  margin: 35px 0;
 }
