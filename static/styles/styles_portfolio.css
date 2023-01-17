@@ -10,7 +10,7 @@
   list-style-type: none;
 }
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 1100px) {
   .listagem_post {
     margin-top: 2vh;
     display: flex;

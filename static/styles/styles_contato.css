@@ -82,7 +82,7 @@
   transition-duration: 2s;
 }
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 1100px) {
   .info_section {
     display: flex;
     flex-direction: column;

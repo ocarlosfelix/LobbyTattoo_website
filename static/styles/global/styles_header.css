@@ -14,11 +14,85 @@ header h1 {
   margin: 0;
 }
 
+.menu_button {
+  display: none;
+  transition-property: display;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.menu_button img {
+  height: 3vh;
+}
+
 .nome__logo {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nome_site {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
   margin-right: 5px;
+  height: 3vh;
+  width: 3vh;
+}
+
+nav {
+  background-color: #943b00;
+  color: #ffffff;
+  text-align: center;
+  padding: 1vh;
+  margin-top: 1vh;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: #ffee00;
+  transition: 0.5s;
+}
+
+@media only screen and (max-device-width: 1100px) {
+  header {
+    background-image: url("../../img/background.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
+    background-size: cover;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  .menu_button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
 }
