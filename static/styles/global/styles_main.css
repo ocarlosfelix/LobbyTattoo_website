@@ -3,10 +3,10 @@ html {
 }
 
 main {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: 35px;
-  margin-right: 35px;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 body {
   font-family: "Cormorant Garamond", serif;
