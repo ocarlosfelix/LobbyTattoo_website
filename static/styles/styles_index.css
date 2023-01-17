@@ -1,7 +1,7 @@
 .slider {
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   width: 80vw;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
 .manual-navigation {
   position: absolute;
   width: 80vw;
-  margin-top: -5vh;
+  margin-top: 15vh;
   display: flex;
   justify-content: center;
 }
@@ -55,15 +55,9 @@
 #radio2:checked ~ .first {
   margin-left: -100%;
 }
-#radio3:checked ~ .first {
+/* #radio3:checked ~ .first {
   margin-left: -200%;
-}
-#radio4:checked ~ .first {
-  margin-left: -300%;
-}
-#radio5:checked ~ .first {
-  margin-left: -400%;
-}
+} */
 
 .navigation-auto div {
   border: 2px solid #20a6ff;
@@ -76,7 +70,7 @@
 .navigation-auto {
   position: absolute;
   width: 80vw;
-  margin-top: 45vh;
+  margin-top: 65vh;
   display: flex;
   justify-content: center;
 }
@@ -91,12 +85,6 @@
 #radio2:checked ~ .navigation-auto .auto-btn2 {
   background-color: orange;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+/* #radio3:checked ~ .navigation-auto .auto-btn3 {
   background-color: orange;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-  background-color: orange;
-}
-#radio5:checked ~ .navigation-auto .auto-btn5 {
-  background-color: orange;
-}
+} */

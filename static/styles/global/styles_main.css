@@ -39,8 +39,6 @@ body::-webkit-scrollbar {
   font-family: "Cormorant Garamond", serif;
   font-size: 3rem;
   color: #ffffff;
-  transition-duration: 0.5s;
-  transform: translateX(20px);
 }
 
 .section_text {

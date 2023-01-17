@@ -76,3 +76,8 @@
 .contato_endereco :hover {
   color: orange;
 }
+
+.info_box_location {
+  transition-property: all;
+  transition-duration: 2s;
+}
