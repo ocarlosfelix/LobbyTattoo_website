@@ -13,3 +13,12 @@ header {
 header h1 {
   margin: 0;
 }
+
+.nome__logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  margin-right: 5px;
+}

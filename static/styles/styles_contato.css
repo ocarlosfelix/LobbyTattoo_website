@@ -2,17 +2,15 @@
   margin: 35px 0;
 }
 
-.contato_title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 3rem;
-  color: #ffffff;
-}
-
 .contato_text {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   color: #ffffff;
   font-weight: 300;
+}
+
+.contato_info_text {
+  font-size: 1rem;
 }
 
 .info_section {
@@ -47,16 +45,11 @@
 }
 
 .info_icon {
-  width: 2vw;
+  max-width: 2vw;
   margin: 3vh 0;
-  flex: 1;
 }
 
 .info_box_location {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   text-decoration: none;
   border-style: solid;
   border-color: #ffffff;
@@ -66,7 +59,6 @@
 .contato_endereco {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
-  flex: 1;
   color: #ffffff;
   font-weight: 300;
   display: flex;
@@ -74,9 +66,13 @@
   padding: 3vh;
   align-items: center;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .info_section a:hover {
+  color: orange;
+}
+
+.contato_endereco :hover {
   color: orange;
 }

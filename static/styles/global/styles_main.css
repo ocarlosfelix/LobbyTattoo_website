@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -33,15 +37,17 @@ body::-webkit-scrollbar {
 
 .section_title {
   font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-  font-size: 35px;
+  font-size: 3rem;
   color: #ffffff;
+  transition-duration: 0.5s;
+  transform: translateX(20px);
 }
+
 .section_text {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 100;
-  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   color: #ffffff;
+  font-weight: 300;
 }
 
 .mapa_box {
