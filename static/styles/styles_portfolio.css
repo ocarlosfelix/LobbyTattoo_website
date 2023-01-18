@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1vh;
   grid-row-gap: 1em;
+  animation: loadTransition 0.75s;
 }
 
 .listagem_post li {

@@ -1,4 +1,5 @@
 #contato {
+  animation: loadTransition 0.75s;
   margin: 35px 0;
 }
 
@@ -18,6 +19,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin: 5vh 0;
+  animation: loadTransition 0.75s;
 }
 
 .info_box {
@@ -54,6 +56,10 @@
   border-style: solid;
   border-color: #ffffff;
   border-radius: 30px;
+}
+
+.mapa_box {
+  animation: map_loadTransition 4s;
 }
 
 .contato_endereco {

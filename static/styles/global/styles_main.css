@@ -33,3 +33,25 @@ body::-webkit-scrollbar {
 .mapa_box {
   margin: 35px 0;
 }
+
+@keyframes loadTransition {
+  from {
+    opacity: 0;
+    transform: translateX(-3vw);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes map_loadTransition {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
