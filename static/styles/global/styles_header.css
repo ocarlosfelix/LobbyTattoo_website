@@ -25,6 +25,10 @@ header h1 {
   height: 3vh;
 }
 
+.menu_box {
+  display: none;
+}
+
 .nome__logo {
   display: flex;
   justify-content: space-between;
@@ -47,7 +51,7 @@ nav {
   background-color: #943b00;
   color: #ffffff;
   text-align: center;
-  padding: 1vh;
+  padding: 0.5vh;
   margin-top: 1vh;
   width: 100%;
 }
@@ -94,5 +98,13 @@ nav a:hover {
 
   nav {
     display: none;
+  }
+
+  .menu_box {
+    display: inline-block;
+    background-color: #ffee00;
+    right: 0;
+    width: 50%;
+    height: 100%;
   }
 }
