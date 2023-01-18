@@ -12,6 +12,11 @@ footer {
   text-align: end;
   padding: 1vh;
   box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
 
 .bardo_link {

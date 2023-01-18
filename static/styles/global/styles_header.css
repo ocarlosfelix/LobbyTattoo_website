@@ -1,110 +1,65 @@
 header {
-  background-image: url("../../img/background.jpg");
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   color: #ffffff;
-  text-align: center;
-  padding-top: 15px;
   box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
+  z-index: 4;
+}
+
+#menu_navegacao {
+  background-image: url("../../img/background.jpg");
   background-size: cover;
-}
-header h1 {
-  margin: 0;
-}
-
-.menu_button {
-  display: none;
-  transition-property: display;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-}
-
-.menu_button img {
-  height: 3vh;
-}
-
-.menu_box {
-  display: none;
-}
-
-.nome__logo {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.nome_site {
+#header_box {
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#menu_botao {
+  max-width: 3vh;
+  max-height: 3vh;
+}
+
+#nav_container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+#nav_container li {
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+#nome_site {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 6vh;
+  margin-left: 2vw;
 }
 
 .logo {
-  margin-right: 5px;
   height: 3vh;
   width: 3vh;
 }
 
-nav {
-  background-color: #943b00;
-  color: #ffffff;
-  text-align: center;
-  padding: 0.5vh;
-  margin-top: 1vh;
-  width: 100%;
-}
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  margin-right: 1vw;
-  margin-left: 1vw;
-}
-nav li {
-  list-style: none;
-}
-nav a {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  font-weight: 300;
-}
-
-nav a:hover {
-  color: #ffee00;
-  transition: 0.5s;
+header h1 {
+  margin: 0;
 }
 
 @media only screen and (max-device-width: 1100px) {
-  header {
-    background-image: url("../../img/background.jpg");
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 0;
-    box-shadow: 2px 2px 25px 15px rgba(0, 5, 10, 0.2);
-    background-size: cover;
-  }
-
   header h1 {
-    margin: 0;
-  }
-
-  .menu_button {
-    display: block;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .menu_box {
-    display: inline-block;
-    background-color: #ffee00;
-    right: 0;
-    width: 50%;
-    height: 100%;
+    margin-left: 1vw;
   }
 }

@@ -17,24 +17,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.nome__logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-.nome_site {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-}
-
-.logo {
-  width: 50px;
-}
-
 .section_title {
   font-family: "Cormorant Garamond", serif;
   font-size: 3vh;

@@ -1,45 +1,198 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="slider_box">
-  <div class="slider">
-    <div class="slides">
-      <input type="radio" name="radio-btn" id="radio1" />
-      <input type="radio" name="radio-btn" id="radio2" />
-      <!-- <input type="radio" name="radio-btn" id="radio3" /> -->
-
-      <div class="slide first">
-        <img
-          src="{{ url_for('static', filename='/img/banner01.jpg') }}"
-          alt="Imagem 1"
-        />
+<div class="carrossel_box">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../static/img/banner01.jpg" class="d-block w-100" alt="..." />
       </div>
-      <div class="slide">
-        <img
-          src="{{ url_for('static', filename='/img/banner02.jpg') }}"
-          alt="Imagem 2"
-        />
-      </div>
-      <!-- <div class="slide">
-        <img
-          src="{{ url_for('static', filename='/img/tatuagem03.jpg') }}"
-          alt="Imagem 3"
-        />
-      </div> -->
-
-      <div class="navigation-auto">
-        <div class="auto-btn1"></div>
-        <div class="auto-btn2"></div>
-        <!-- <div class="auto-btn3"></div> -->
+      <div class="carousel-item">
+        <img src="../static/img/banner02.jpg" class="d-block w-100" alt="..." />
       </div>
     </div>
-
-    <div class="manual-navigation">
-      <label for="radio1" class="manual-btn"></label>
-      <label for="radio2" class="manual-btn"></label>
-      <!-- <label for="radio3" class="manual-btn"></label> -->
-    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </div>
-<script src="{{ url_for('static', filename='js/carrossel.js')}}"></script>
+
+<h1 id="titulo_avaliacoes" class="section_title">
+  ACOMPANHE NOSSAS AVALIAÇÕES
+</h1>
+<section class="comentarios_section">
+  <div class="descricao_comentarios">
+    <p class="section_text">
+      A Lobby Tattoo tem orgulho de dizer que já atendeu milhares de clientes ao
+      longo de sua história. <br />
+      Sabemos que a satisfação dos nossos clientes é o fator mais importante em
+      nosso negócio e trabalhamos duro para garantir que cada cliente saia de
+      nosso estúdio completamente satisfeito com sua tatuagem ou piercing.
+    </p>
+    <p class="section_text">
+      As avaliações dos nossos clientes são muito importantes para nós, pois nos
+      ajudam a entender como estamos fazendo e onde podemos melhorar. <br />
+      Por esse motivo temos orgulho em apresentar as avaliações que comprovam
+      nossa qualidade de atendimento e seriedade no trabalho. <br />
+      Se você já foi atendido por nós, por favor, deixe sua avaliação para que
+      possamos continuar oferecendo o melhor serviço possível.
+    </p>
+    <p class="section_text">
+      Além disso, gostaríamos de lembrar aos nossos clientes que caso sejam
+      menores de idade, é necessário avisar durante o agendamento para que
+      possamos viabilizar a parte legal. A Lobby Tattoo segue todas as
+      regulamentações legais para garantir a segurança e o bem estar de todos os
+      nossos clientes.
+    </p>
+  </div>
+
+  <div class="comentario_box">
+    <div class="comentario">
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsilvanaheck%2Fposts%2Fpfbid02pSrNCPTtnABFnzYgC3ek1NzCQCyCovkeWSdMMvhJQ53zHPVFBQ8PiJU74EbkCjrzl&show_text=true&width=500"
+        width="500"
+        height="194"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fguilherme.malek.9%2Fposts%2Fpfbid0qBSjXR54S6LUBaSPWwGM25NSdxiRc4ASFLk6xz4tRstZtaf2Uv6YWCANprEjTtNxl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffrancieli.zabunov%2Fposts%2Fpfbid0VFg4jpMHLiffCRcXEv8afnvS7Xek6hDtDNAU96YczA3VvExT1ciuNbkH4R3mQcqQl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjahrmann.oliveira%2Fposts%2Fpfbid0uZaSBVcpRyweNjYZfmFW6AmVUCM1v9xQ9Xa9z3kT2JduBvdLQN3iHxRzriZMxPLhl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbrucrg%2Fposts%2Fpfbid09HcNuxnEkQczkphzRxmVdAPNRggAzhjxeWyc1BoJF323LcUiJBgEk8FekTfxeQiSl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoaohenrique.hamann%2Fposts%2Fpfbid0XPxPogsufPRoRtTjGJQnD81uoXyabi5yio7Q946BvAqZi215ey72EYx3mjqVHmmrl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0scDVxevZ6uUXLra4DzoEq9HB4ucHVwyQUNwMxc3xnSCdhjhs1stvgPSELV9bhJXRl%26id%3D100004047519488&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjulya.depaula%2Fposts%2Fpfbid0S6xyJkgLBFKrRsYxkBwpc4mxf3vQ27b6n7zrUcKpyrDx9udarJ8HpgjPVQxM1B1Sl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbianca.paula.560%2Fposts%2Fpfbid02DKs88E9YpyYMKadAzrxgkbBVmRRdvNYfe59zBkjcyHrbFG7gx89hvBwR6kg4F8uFl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiovana.paladino%2Fposts%2Fpfbid0zVhyhFPEvKdJfSuFQcB3aYmEntB9UWW4DaexX5SBsft3TvVMbWxQQ7wNo368FmXCl&show_text=true&width=500"
+        width="500"
+        height="221"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
