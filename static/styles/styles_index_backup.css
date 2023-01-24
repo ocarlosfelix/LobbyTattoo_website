@@ -1,0 +1,70 @@
+.index {
+  animation: loadTransition 0.75s;
+}
+
+.carrossel_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+#carouselExampleIndicators {
+  width: 85%;
+}
+
+.comentarios_section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.comentarios_section_box {
+  display: flex;
+  margin-top: 5vh;
+}
+
+.descricao_comentarios {
+  flex: 1;
+  text-align: center;
+  margin: 5vh 10vw;
+}
+
+.comentario_box {
+  flex: 1;
+  width: 100%;
+  margin: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.comentario {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 0.25fr 0.25fr;
+  grid-gap: 2vh;
+}
+
+#titulo_avaliacoes {
+}
+
+@media only screen and (max-device-width: 1100px) {
+  .comentario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+  }
+
+  .comentarios_section_box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    align-items: center;
+  }
+
+  .comentario_box {
+    width: 80%;
+    align-items: center;
+  }
+}

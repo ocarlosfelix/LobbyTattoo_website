@@ -3,7 +3,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-image: url("../../img/background.jpg");
+  background-color: #212529;
   display: flex;
   flex-direction: row;
   align-items: center;

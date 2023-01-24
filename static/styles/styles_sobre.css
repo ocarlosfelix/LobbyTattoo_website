@@ -36,7 +36,7 @@ section {
   width: 100%;
   padding: 2vh;
   margin-top: 3vh;
-  background-image: url("../img/background.jpg");
+  background-color: rgba(184, 184, 184, 0.2);
   box-shadow: 2px 2px 2px 1px rgba(0, 10, 10, 0.2);
   align-items: center;
 }
